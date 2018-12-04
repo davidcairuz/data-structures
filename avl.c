@@ -61,6 +61,7 @@ NODE* initialize_node(ITEM value) {
 	node->value = value;
 	node->left = NULL;
 	node->right = NULL;
+	node->height = 0;
 
 	return node;
 }

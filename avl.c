@@ -59,9 +59,9 @@ NODE* initialize_node(ITEM value) {
 	if(node == NULL) return node;
 
 	node->value = value;
+	node->height = 0;
 	node->left = NULL;
 	node->right = NULL;
-	node->height = 0;
 
 	return node;
 }
@@ -331,9 +331,9 @@ int main() {
 			avl_print_debug(get_root(tree), 0);
 
 		} else if(op == 4) {
-			printf("Printing sorted items...\n")
+			printf("Printing sorted items...\n");
 			avl_print_sorted(get_root(tree));
-			printf('\n');
+			printf("\n");
 		}
 	}
 
